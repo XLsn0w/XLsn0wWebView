@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "StoreCell.h"
+#import "ViewCell.h"
 //#import "StoreModel.h"
 #import "XLsn0wWebViewController.h"
+#import <XLsn0wKit_objc/XLsn0wKit_objc.h>
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endRefreshing) name:@"endRefreshing" object:nil];
     [self addTableViewWithFrame:self.view.bounds];
-//    [self addTableHeaderView];
+    [self add_tableFooterView];
 }
 
 - (void)dealloc {
@@ -53,7 +54,7 @@
     self.tableView.delegate = self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 //    self.tableView.backgroundColor = ViewBgColor;
-    [self.tableView registerClass:[StoreCell class] forCellReuseIdentifier:@"StoreCell"];
+    [self.tableView registerClass:[ViewCell class] forCellReuseIdentifier:@"StoreCell"];
 //    [self.tableView estimated_iPhone_X];
     
 //    @WeakObj(self);
@@ -81,10 +82,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    StoreCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoreCell"];
-    if (self.dataArray.count > 0) {
-        [cell addData:self.dataArray[indexPath.row]];
-    }
+    ViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StoreCell"];
+//    if (self.dataArray.count > 0) {
+//        [cell addData:self.dataArray[indexPath.row]];
+//    }
     return cell;
 }
 
@@ -131,5 +132,13 @@
 //
 //    self.tableView.tableHeaderView = tableHeaderView;
 //}
+
+
+- (void)add_tableFooterView {
+    UIView *tableFooterView = [UIView new];
+    tableFooterView.frame = CGRectMake(0, 0, kScreenWidth, 10);
+    tableFooterView.backgroundColor =  [UIColor xlsn0w_hexString:@"#F8F8F8"];
+    self.tableView.tableFooterView = tableFooterView;
+}
 
 @end

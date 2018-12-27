@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class StoreModel;
 
-@interface StoreCell : UITableViewCell
+@interface ViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *name;
 @property (nonatomic, strong) UILabel *descr;
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIImageView *furnitureIcon;
 
-- (void)addData:(StoreModel*)model;
+//- (void)addData:(StoreModel*)model;
 
 
 @end

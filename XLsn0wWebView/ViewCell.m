@@ -6,7 +6,7 @@
 //  Copyright © 2018 TimeForest. All rights reserved.
 //
 
-#import "StoreCell.h"
+#import "ViewCell.h"
 //#import "StoreModel.h"
 #import "Masonry.h"
 #import <XLsn0wKit_objc/XLsn0wKit_objc.h>
@@ -39,7 +39,7 @@
 #define AppWhiteTextColor           [UIColor xlsn0w_hexString:@"#FFFFFF"]
 
 
-@implementation StoreCell
+@implementation ViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

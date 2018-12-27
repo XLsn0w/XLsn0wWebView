@@ -18,7 +18,7 @@
 		7869EFD921D46EDA00308170 /* XLsn0wWebViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFD821D46EDA00308170 /* XLsn0wWebViewUITests.m */; };
 		7869EFEB21D4744500308170 /* XLsn0wWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFE721D4744500308170 /* XLsn0wWebView.m */; };
 		7869EFEC21D4744500308170 /* XLsn0wWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFE821D4744500308170 /* XLsn0wWebViewController.m */; };
-		7869EFF921D47C5E00308170 /* StoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFF121D47C5E00308170 /* StoreCell.m */; };
+		7869EFF921D47C5E00308170 /* ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFF121D47C5E00308170 /* ViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0571B55111AB46856B008D52 /* Pods-XLsn0wWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wWebView/Pods-XLsn0wWebView.release.xcconfig"; sourceTree = "<group>"; };
+		78055A4321D4B567001536C0 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
 		7869EFB121D46ED900308170 /* XLsn0wWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7869EFB421D46ED900308170 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7869EFB521D46ED900308170 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,8 +61,8 @@
 		7869EFE821D4744500308170 /* XLsn0wWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wWebViewController.m; sourceTree = "<group>"; };
 		7869EFE921D4744500308170 /* XLsn0wWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wWebViewController.h; sourceTree = "<group>"; };
 		7869EFEA21D4744500308170 /* XLsn0wWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wWebView.h; sourceTree = "<group>"; };
-		7869EFF121D47C5E00308170 /* StoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreCell.m; sourceTree = "<group>"; };
-		7869EFF221D47C5E00308170 /* StoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreCell.h; sourceTree = "<group>"; };
+		7869EFF121D47C5E00308170 /* ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCell.m; sourceTree = "<group>"; };
+		7869EFF221D47C5E00308170 /* ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCell.h; sourceTree = "<group>"; };
 		C15A95F166C14476D80F5C42 /* Pods_XLsn0wWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F350A7A64F9F1F160986FE /* Pods-XLsn0wWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wWebView/Pods-XLsn0wWebView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +131,8 @@
 				7869EFB521D46ED900308170 /* AppDelegate.m */,
 				7869EFB721D46ED900308170 /* ViewController.h */,
 				7869EFB821D46ED900308170 /* ViewController.m */,
-				7869EFF221D47C5E00308170 /* StoreCell.h */,
-				7869EFF121D47C5E00308170 /* StoreCell.m */,
+				7869EFF221D47C5E00308170 /* ViewCell.h */,
+				7869EFF121D47C5E00308170 /* ViewCell.m */,
 				7869EFBA21D46ED900308170 /* Main.storyboard */,
 				7869EFBD21D46EDA00308170 /* Assets.xcassets */,
 				7869EFBF21D46EDA00308170 /* LaunchScreen.storyboard */,
@@ -166,6 +167,7 @@
 				7869EFE721D4744500308170 /* XLsn0wWebView.m */,
 				7869EFE921D4744500308170 /* XLsn0wWebViewController.h */,
 				7869EFE821D4744500308170 /* XLsn0wWebViewController.m */,
+				78055A4321D4B567001536C0 /* MacroHeader.h */,
 			);
 			path = WebViewController;
 			sourceTree = "<group>";
@@ -374,7 +376,7 @@
 			files = (
 				7869EFB921D46ED900308170 /* ViewController.m in Sources */,
 				7869EFC421D46EDA00308170 /* main.m in Sources */,
-				7869EFF921D47C5E00308170 /* StoreCell.m in Sources */,
+				7869EFF921D47C5E00308170 /* ViewCell.m in Sources */,
 				7869EFEC21D4744500308170 /* XLsn0wWebViewController.m in Sources */,
 				7869EFB621D46ED900308170 /* AppDelegate.m in Sources */,
 				7869EFEB21D4744500308170 /* XLsn0wWebView.m in Sources */,

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		31306A5844ACCC66337A831F /* Pods_XLsn0wWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15A95F166C14476D80F5C42 /* Pods_XLsn0wWebView.framework */; };
+		78055A4A21D4BB8C001536C0 /* StoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78055A4521D4BB8C001536C0 /* StoreDetailViewController.m */; };
+		78055A5021D4BBFA001536C0 /* CycleImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78055A4E21D4BBFA001536C0 /* CycleImgCell.m */; };
+		78055A5121D4BBFA001536C0 /* WebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78055A4F21D4BBFA001536C0 /* WebViewCell.m */; };
 		7869EFB621D46ED900308170 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFB521D46ED900308170 /* AppDelegate.m */; };
 		7869EFB921D46ED900308170 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFB821D46ED900308170 /* ViewController.m */; };
 		7869EFBC21D46ED900308170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7869EFBA21D46ED900308170 /* Main.storyboard */; };
@@ -41,6 +44,12 @@
 /* Begin PBXFileReference section */
 		0571B55111AB46856B008D52 /* Pods-XLsn0wWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wWebView.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wWebView/Pods-XLsn0wWebView.release.xcconfig"; sourceTree = "<group>"; };
 		78055A4321D4B567001536C0 /* MacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroHeader.h; sourceTree = "<group>"; };
+		78055A4521D4BB8C001536C0 /* StoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailViewController.m; sourceTree = "<group>"; };
+		78055A4921D4BB8C001536C0 /* StoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailViewController.h; sourceTree = "<group>"; };
+		78055A4C21D4BBFA001536C0 /* WebViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewCell.h; sourceTree = "<group>"; };
+		78055A4D21D4BBFA001536C0 /* CycleImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleImgCell.h; sourceTree = "<group>"; };
+		78055A4E21D4BBFA001536C0 /* CycleImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleImgCell.m; sourceTree = "<group>"; };
+		78055A4F21D4BBFA001536C0 /* WebViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewCell.m; sourceTree = "<group>"; };
 		7869EFB121D46ED900308170 /* XLsn0wWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7869EFB421D46ED900308170 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7869EFB521D46ED900308170 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +110,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		78055A4421D4BB8C001536C0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				78055A4921D4BB8C001536C0 /* StoreDetailViewController.h */,
+				78055A4521D4BB8C001536C0 /* StoreDetailViewController.m */,
+				78055A4D21D4BBFA001536C0 /* CycleImgCell.h */,
+				78055A4E21D4BBFA001536C0 /* CycleImgCell.m */,
+				78055A4C21D4BBFA001536C0 /* WebViewCell.h */,
+				78055A4F21D4BBFA001536C0 /* WebViewCell.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		7869EFA821D46ED900308170 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +155,7 @@
 				7869EFB821D46ED900308170 /* ViewController.m */,
 				7869EFF221D47C5E00308170 /* ViewCell.h */,
 				7869EFF121D47C5E00308170 /* ViewCell.m */,
+				78055A4421D4BB8C001536C0 /* Detail */,
 				7869EFBA21D46ED900308170 /* Main.storyboard */,
 				7869EFBD21D46EDA00308170 /* Assets.xcassets */,
 				7869EFBF21D46EDA00308170 /* LaunchScreen.storyboard */,
@@ -375,7 +398,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7869EFB921D46ED900308170 /* ViewController.m in Sources */,
+				78055A5021D4BBFA001536C0 /* CycleImgCell.m in Sources */,
+				78055A4A21D4BB8C001536C0 /* StoreDetailViewController.m in Sources */,
 				7869EFC421D46EDA00308170 /* main.m in Sources */,
+				78055A5121D4BBFA001536C0 /* WebViewCell.m in Sources */,
 				7869EFF921D47C5E00308170 /* ViewCell.m in Sources */,
 				7869EFEC21D4744500308170 /* XLsn0wWebViewController.m in Sources */,
 				7869EFB621D46ED900308170 /* AppDelegate.m in Sources */,

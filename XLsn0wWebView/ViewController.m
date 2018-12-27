@@ -11,6 +11,7 @@
 //#import "StoreModel.h"
 #import "XLsn0wWebViewController.h"
 #import <XLsn0wKit_objc/XLsn0wKit_objc.h>
+#import "StoreDetailViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -101,21 +102,25 @@
     
   
     
-     XLsn0wWebViewController *web = [[XLsn0wWebViewController alloc]init];
-     // 隐藏导航条 注意隐藏导航条要在 appDelegate.m 中发送一个通知 SHOW_NAVBAR_NOTIFI, 以防在程序进入前台时导航条没有显示
-     web.isHideNavigationBar = NO;
-     
-     //    web.canRefresh = YES;// 是否刷新
-     //    web.canCopy = YES;
-     //    // 1. 传 cookie
-     //    web.cookieValue = [NSString stringWithFormat:@"%@=%@",@"testWKcookie", @"testWKcookievalue"];
-     //    // WKUserScript 的 source 字符串
-     //    web.sourceStr = [NSString stringWithFormat:@"document.cookie ='token=%@';document.cookie = 'os=ios';",@"你的token"];
-     web.url = @"https://www.ithome.com/";
-     [self.navigationController pushViewController:web animated:YES];
   
     
-    
+    if (indexPath.row == 0) {
+        XLsn0wWebViewController *web = [[XLsn0wWebViewController alloc]init];
+        // 隐藏导航条 注意隐藏导航条要在 appDelegate.m 中发送一个通知 SHOW_NAVBAR_NOTIFI, 以防在程序进入前台时导航条没有显示
+        web.isHideNavigationBar = NO;
+        
+        //    web.canRefresh = YES;// 是否刷新
+        //    web.canCopy = YES;
+        //    // 1. 传 cookie
+        //    web.cookieValue = [NSString stringWithFormat:@"%@=%@",@"testWKcookie", @"testWKcookievalue"];
+        //    // WKUserScript 的 source 字符串
+        //    web.sourceStr = [NSString stringWithFormat:@"document.cookie ='token=%@';document.cookie = 'os=ios';",@"你的token"];
+        web.url = @"https://www.ithome.com/";
+        [self.navigationController pushViewController:web animated:YES];
+    } else {
+        StoreDetailViewController *vc = [[StoreDetailViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:true];
+    }
 }
 
 //- (void)addTableHeaderView {

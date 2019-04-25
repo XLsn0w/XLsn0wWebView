@@ -23,6 +23,13 @@
 		7869EFEB21D4744500308170 /* XLsn0wWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFE721D4744500308170 /* XLsn0wWebView.m */; };
 		7869EFEC21D4744500308170 /* XLsn0wWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFE821D4744500308170 /* XLsn0wWebViewController.m */; };
 		7869EFF921D47C5E00308170 /* ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869EFF121D47C5E00308170 /* ViewCell.m */; };
+		C617D33F2271F46B00E96BD6 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C617D33C2271F46A00E96BD6 /* WKWebViewController.m */; };
+		C617D3402271F46B00E96BD6 /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = C617D33E2271F46B00E96BD6 /* JStoOC.html */; };
+		C617D3472271F47100E96BD6 /* backbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C617D3422271F47100E96BD6 /* backbutton@3x.png */; };
+		C617D3482271F47100E96BD6 /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C617D3432271F47100E96BD6 /* backbutton@2x.png */; };
+		C617D3492271F47100E96BD6 /* webRefreshButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C617D3442271F47100E96BD6 /* webRefreshButton@2x.png */; };
+		C617D34A2271F47100E96BD6 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = C617D3452271F47100E96BD6 /* girl.png */; };
+		C617D34B2271F47100E96BD6 /* webRefreshButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C617D3462271F47100E96BD6 /* webRefreshButton@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +84,14 @@
 		7869EFF221D47C5E00308170 /* ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCell.h; sourceTree = "<group>"; };
 		C15A95F166C14476D80F5C42 /* Pods_XLsn0wWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F350A7A64F9F1F160986FE /* Pods-XLsn0wWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wWebView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wWebView/Pods-XLsn0wWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		C617D33C2271F46A00E96BD6 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		C617D33D2271F46A00E96BD6 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		C617D33E2271F46B00E96BD6 /* JStoOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOC.html; sourceTree = "<group>"; };
+		C617D3422271F47100E96BD6 /* backbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@3x.png"; sourceTree = "<group>"; };
+		C617D3432271F47100E96BD6 /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
+		C617D3442271F47100E96BD6 /* webRefreshButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webRefreshButton@2x.png"; sourceTree = "<group>"; };
+		C617D3452271F47100E96BD6 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
+		C617D3462271F47100E96BD6 /* webRefreshButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webRefreshButton@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +211,7 @@
 				7869EFE921D4744500308170 /* XLsn0wWebViewController.h */,
 				7869EFE821D4744500308170 /* XLsn0wWebViewController.m */,
 				78055A4321D4B567001536C0 /* MacroHeader.h */,
+				C617D33B2271F45500E96BD6 /* JSCallOC */,
 			);
 			path = WebViewController;
 			sourceTree = "<group>";
@@ -207,6 +223,29 @@
 				0571B55111AB46856B008D52 /* Pods-XLsn0wWebView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C617D33B2271F45500E96BD6 /* JSCallOC */ = {
+			isa = PBXGroup;
+			children = (
+				C617D33D2271F46A00E96BD6 /* WKWebViewController.h */,
+				C617D33C2271F46A00E96BD6 /* WKWebViewController.m */,
+				C617D33E2271F46B00E96BD6 /* JStoOC.html */,
+				C617D3412271F47100E96BD6 /* Resource */,
+			);
+			path = JSCallOC;
+			sourceTree = "<group>";
+		};
+		C617D3412271F47100E96BD6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C617D3422271F47100E96BD6 /* backbutton@3x.png */,
+				C617D3432271F47100E96BD6 /* backbutton@2x.png */,
+				C617D3442271F47100E96BD6 /* webRefreshButton@2x.png */,
+				C617D3452271F47100E96BD6 /* girl.png */,
+				C617D3462271F47100E96BD6 /* webRefreshButton@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +353,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C617D3402271F46B00E96BD6 /* JStoOC.html in Resources */,
+				C617D34B2271F47100E96BD6 /* webRefreshButton@3x.png in Resources */,
+				C617D34A2271F47100E96BD6 /* girl.png in Resources */,
+				C617D3472271F47100E96BD6 /* backbutton@3x.png in Resources */,
 				7869EFC121D46EDA00308170 /* LaunchScreen.storyboard in Resources */,
+				C617D3482271F47100E96BD6 /* backbutton@2x.png in Resources */,
+				C617D3492271F47100E96BD6 /* webRefreshButton@2x.png in Resources */,
 				7869EFBE21D46EDA00308170 /* Assets.xcassets in Resources */,
 				7869EFBC21D46ED900308170 /* Main.storyboard in Resources */,
 			);
@@ -405,6 +450,7 @@
 				7855704321DF3BDB00751CB1 /* WKWebViewDemoController.m in Sources */,
 				7869EFB921D46ED900308170 /* ViewController.m in Sources */,
 				78055A5021D4BBFA001536C0 /* CycleImgCell.m in Sources */,
+				C617D33F2271F46B00E96BD6 /* WKWebViewController.m in Sources */,
 				78055A4A21D4BB8C001536C0 /* StoreDetailViewController.m in Sources */,
 				7869EFC421D46EDA00308170 /* main.m in Sources */,
 				78055A5121D4BBFA001536C0 /* WebViewCell.m in Sources */,
